@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { BlurComponent } from './blur.component';
 
 describe('BlurComponent', () => {

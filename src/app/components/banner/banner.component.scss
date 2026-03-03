@@ -13,7 +13,7 @@
     position: relative;
     z-index: 5;
 
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -21,18 +21,21 @@
 
     
     .text {
-        
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         
-        span {
+        h1 {
             background: #A1BFFF;
             background: linear-gradient(to right, #A1BFFF 0%, #ffff 50%,#A649D2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 2.1em;
+            
+        }
+
+        span {
+            font-size: 1.9em;
         }
 
         p {
@@ -42,26 +45,54 @@
             -webkit-text-fill-color: transparent;
 
             font-size: 2em;
+
+            animation: blurIn 2s ease forwards;
         }
 
-    
+        .icons {
+            display: flex;
+            margin-top: 10px !important;
+            gap: 10px;
+            background: #A1BFFF;
+            background: linear-gradient(to right, #A1BFFF 0%, #ffff 50%,#A649D2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            i {
+            
+                color: white;
+                font-size: 2em;
+            
+
+            }
+
+        }
+
+        .arrow {
+            margin-top: 20px !important;
+            background: #A1BFFF;
+            background: linear-gradient(to right, #A1BFFF 0%, #ffff 50%,#A649D2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            font-size: 20px;
+        }
+
     }
 }
 
-
-
-span {
+h1 {
 	display: inline-block;
 	opacity: 0;
 	filter: blur(20px);
 	animation: blurIn 2s ease forwards;
 }
 
-span:nth-child(1) {
+h1:nth-child(1) {
 	animation-delay: 1s;
 }
 
-span:nth-child(2) {
+h1:nth-child(2) {
 	animation-delay: 1.2s;
 }
 

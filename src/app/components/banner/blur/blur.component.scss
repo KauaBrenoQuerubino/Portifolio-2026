@@ -1,6 +1,6 @@
 .gradient-blur {
     position: fixed;
-    z-index: 2;
+    z-index: 999;
     inset: 0;
     backdrop-filter: blur(12px); /* Apply blur */
     -webkit-backdrop-filter: blur(12px); /* Safari support */
@@ -14,7 +14,6 @@
     mask-repeat: no-repeat;
     mask-size: cover;
 
-    height: 80vh;
+    height: 60vh;
     background-color: rgba(137, 43, 226, 0.295);
 }
-
