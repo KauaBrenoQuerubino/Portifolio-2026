@@ -5,13 +5,15 @@
     width: 100%;
 
     position: fixed;
-    z-index: 0;
+    z-index: 1 !important;
 
 }
 
 .container {
     position: relative;
     z-index: 5;
+
+    padding: 0 !important;
 
     height: 100vh;
     width: 100%;
