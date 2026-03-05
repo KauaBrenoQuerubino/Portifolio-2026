@@ -1,0 +1,12 @@
+<section>
+    <div class="cards">
+        @for (item of projetos; track $index) {
+                <div class="card ">
+                    <img [src]="item.url_image" alt="">
+                    <h2>{{item.nome}}</h2>
+                    <p>{{item.descricao}}</p>
+                    <a [href]="item.link_repositorio">Leia mais</a>
+                </div>
+            }
+    </div>
+</section>
