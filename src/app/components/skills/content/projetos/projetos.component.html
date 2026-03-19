@@ -4,7 +4,7 @@
                 <div class="card " data-aos="zoom-out-up" [routerLink]="['/projeto', $index]" >
                     <img [src]="item.url_image" alt="">
                     <h2>{{item.nome}}</h2>
-                    <p>{{item.descricao}}</p>
+                    <p>{{item.descricao | slice:0:50}}...</p>
                     <a  [routerLink]="['/projeto', $index]">Leia mais</a>
                 </div>
             }

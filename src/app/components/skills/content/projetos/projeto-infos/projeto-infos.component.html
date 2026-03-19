@@ -16,10 +16,13 @@
             </div>
         </div>
         <div class="col">
-            <video [src]="projeto?.url_video" [autoplay]="true" [loop]="true" [muted]="true"></video>
+            <video [src]="projeto?.url_video" [autoplay]="true" [loop]="true" [muted]="true" preload="metadata"></video>
             <div class="btns">
-                <button><a [href]="projeto?.link_repositorio"><i class="bi bi-github"></i></a></button>
-                <button><a [href]="projeto?.link_download"><i class="bi bi-cloud-download-fill"></i></a></button>
+
+                @if (projeto?.publico) {
+                    <button><a [href]="projeto?.link_repositorio"><i class="bi bi-github"></i></a></button>
+                    <button><a [href]="projeto?.link_download"><i class="bi bi-cloud-download-fill"></i></a></button>
+                }
             </div>
         </div>
     </div>

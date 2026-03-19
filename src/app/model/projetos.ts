@@ -3,6 +3,7 @@ export interface Projeto {
     url_video : string,
     nome : string,
     descricao: string,
+    publico: boolean,
     link_repositorio: string,
     link_download: string,
     tecnologias: string[]
@@ -11,15 +12,16 @@ export interface Projeto {
 export const PROJETO_PADRAO: Projeto[] = [
 
     {
-        url_image : "imgs/OIP.jfif",
-        url_video : "video/videoteste.mp4",
-        nome : "PROJETO 2",
-        descricao: "lorem ipson teste2",
-        link_repositorio: "link",
-        link_download: "https://github.com/KauaBrenoQuerubino/KauaBrenoQuerubino/archive/refs/heads/main.zip",
+        url_image : "imgs/projects/SICA.png",
+        url_video : "video/projects/SICA.mp4",
+        nome : "SICA",
+        descricao: "O SICA é um sistema que integra os setores de Monitoramento, Demanda e Despachantes, centralizando informações e automatizando processos. Ele gera relatórios e comparações automaticamente, reduzindo tarefas manuais e aumentando a eficiência operacional.",
+        publico: false,
+        link_repositorio: "",
+        link_download: "",
 
         tecnologias: [
-            "angular", "java"
+            "angular", "java", "python"
         ]
     }
 
