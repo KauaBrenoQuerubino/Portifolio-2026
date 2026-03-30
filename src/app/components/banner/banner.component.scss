@@ -51,14 +51,24 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             
+
+
+
+              
+
             i {
-            
+                cursor: pointer;
                 color: white;
                 font-size: 2em;
+                
+            }
+            
             
 
-            }
+        }
 
+        a {
+                margin-top: 20px !important;
         }
 
         .arrow {
@@ -69,6 +79,8 @@
             -webkit-text-fill-color: transparent;
 
             font-size: 20px;
+
+            
         }
 
     }
@@ -103,5 +115,18 @@
 // 	}
 // }
 
+@media screen and (max-width: 720px) {
 
+    .container {
+        height: 100vh;
+    }
+
+    span {
+        font-size: 1.6em !important;
+    }
+    
+    p {
+        font-size: 1.5em !important;
+    }
+}
 

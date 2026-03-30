@@ -1,58 +1,59 @@
 
 
 
-<section data-aos = "fade-up" data-aos-easing="ease-in-out">
+<section data-aos = "fade-up" data-aos-easing="ease-in-out" id="sobre">
     <div class="container">
         <div class="row">
                 <div class="img">
-                    <img src="imgs/OIP.jfif" alt="">
+                    <img src="imgs/perfil.jpeg" alt="">
                 </div>
                 <div class="text">
                     <h1 data-aos="fade-up">SOBRE MIM</h1>
-                    <p class="ini" data-aos="fade-up">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia repudiandae sit, eos alias accusantium corporis quaerat nemo eaque consectetur perspiciatis ut magnam iure vel omnis cumque, ullam asperiores impedit molestias.</p>
-                    <p class="fin" data-aos="fade-up">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia repudiandae sit, eos alias accusantium corporis quaerat nemo eaque consectetur perspiciatis ut magnam iure vel omnis cumque, ullam asperiores impedit molestias.</p>
+                    <p class="ini" data-aos="fade-up">Sou um desenvolvedor apaixonado por tecnologia, com foco em criar soluções modernas, funcionais e bem estruturadas. Atualmente, estou aprofundando meus conhecimentos em desenvolvimento front-end e back-end, trabalhando com tecnologias como Angular, Java e APIs REST.</p>
+                    <p class="fin" data-aos="fade-up">Tenho experiência na criação de sites e aplicações web, incluindo projetos de e-commerce, sistemas acadêmicos e páginas de vendas. Busco sempre evoluir minhas habilidades, aprendendo novas ferramentas e boas práticas para entregar projetos cada vez mais eficientes e com melhor experiência para o usuário.</p>
+                   
                     <div class="btn" data-aos="fade-up">
-                        <button>Donwload CV</button><button>Contato</button>
+                        <button (click)="baixarCV()">Donwload CV</button><button onclick="window.location.href = 'https://wa.me/5561986023229'">Contato</button>
                     </div>
                 </div>
         </div>
         
         <div class="row">
             <div class="atalhos">
-                <div class="card" data-aos="fade-right"   data-aos-easing="ease-in-sine">
+                <div class="card" data-aos="fade-right"   data-aos-easing="ease-in-sine" (click)="irParaSobre(1)">
                     <div class="title">
                         <div class="icon"><i class="bi bi-code"></i></div>
                         <div class="content">
                             <h1>Melhores Projetos</h1>
-                            <p>teste teste teste</p>
+                            <p>Ver projetos</p>
                         </div>
                     </div>
                     <div class="value">
-                        <span>7</span>
+                        <span>5</span>
                     </div>
                 </div>
-                <div class="card" data-aos="fade-right"   data-aos-easing="ease-in-sine" >
+                <div class="card" data-aos="fade-right"   data-aos-easing="ease-in-sine" (click)="irParaSobre(2)">
                     <div class="title">
                         <div class="icon"><i class="bi bi-award"></i></div>
                         <div class="content">
-                            <h1>Melhores Projetos</h1>
-                            <p>teste teste teste</p>
+                            <h1>Certificados</h1>
+                            <p>Ver certificados</p>
                         </div>
                     </div>
                     <div class="value">
-                        <span>7</span>
+                        <span>4</span>
                     </div>
                 </div>
-                <div class="card" data-aos="fade-right"   data-aos-easing="ease-in-sine">
+                <div class="card" data-aos="fade-right"   data-aos-easing="ease-in-sine" (click)="irParaSobre(3)">
                     <div class="title">
                         <div class="icon"><i class="bi bi-globe"></i></div>
                         <div class="content">
-                            <h1>Melhores Projetos</h1>
-                            <p>teste teste teste</p>
+                            <h1>Habilidades</h1>
+                            <p>Ver habilidades</p>
                         </div>
                     </div>
                     <div class="value">
-                        <span>7</span>
+                        <span>10</span>
                     </div>
                 </div>
             </div>

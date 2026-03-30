@@ -44,6 +44,8 @@ section {
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
 
+
+                font-size: 20px;
                 text-align: center;
                 width: 40%;
             }
@@ -82,8 +84,11 @@ section {
             }
 
             video {
-               width: 600px;
-               box-shadow: rgba(255, 0, 106, 0.185) 0px 22px 70px 4px;
+
+                border-radius: 20px;
+                
+                height: 360px;
+                box-shadow: rgba(255, 0, 106, 0.185) 0px 22px 70px 4px;
             }
 
             &:first-child {
