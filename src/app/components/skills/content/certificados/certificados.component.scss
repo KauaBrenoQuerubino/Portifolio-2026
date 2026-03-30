@@ -72,3 +72,14 @@ section {
     }
 
 }
+
+@media screen and (max-width: 720px) {
+    .cards {
+        flex-direction: column !important;
+        align-items: center;
+        .card {
+            
+            width: 90% !important;
+        }
+    }
+}
